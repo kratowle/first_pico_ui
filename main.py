@@ -79,18 +79,45 @@ prev_y = False
 # Trigger
 # current is true and prev is false
 # buttons are only allowed to report facts
- 
+# # 1. Read inputs
+    # 2. Detect edges
+    # 3. Change state
+    # 4. Draw based on state
+    # 5. Update memory
+    # 6. Sleep (frame pacing)
+
+
 while True:   # Keeps the Pico alive, Creates “frames”, Lets us add logic incrementally without crashes
+
+    # 1. Read raw button states
     a_now = button_a.read()
     b_now = button_b.read()
     x_now = button_x.read()
     y_now = button_y.read()
+
+    # 2. detect rising edges (press events)
 
     a_pressed = a_now and not prev_a
     b_pressed = b_now and not prev_b
     x_pressed = x_now and not prev_x
     y_pressed = y_now and not prev_y
 
+    # 3. state changes (placeholder)
+    # if a_pressed:
+    #    state = "MENU"
 
-    pass
+    # 4.draw based on state (placeholder)
+    # draw_clock()
+    # draw_menu()
+
+    # 5. update memory (MUST happen every frame)
+
+    prev_a = a_now
+    prev_b = b_now
+    prev_x = x_now
+    prev_y = y_now
+    
+    # 6. sleep (frame pacing)
+
+    time.sleep(0.05)  # 20fps
 
