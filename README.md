@@ -18,7 +18,7 @@
 
  This is going to be "one of the fist" projects i do before i clean my github
 
-# (AI)
+# this is going to be the very first section always in python
  
 ### Imports / Dependencies
  This section is where you declare what your program is allowed to use.
@@ -30,7 +30,7 @@
  That’s why this always lives at the very top.
  
 
-# (AI)
+# this is this 2nd section from the top
  
 ### Hardware Objects
  This section is where you bind software names to physical things.
@@ -44,7 +44,7 @@
  This is the layer that separates electronics from program logic.
  
 
-# (AI)
+# at this point i am not sure if this takes a specific place in the code's structure
  
 ### Program State (Single Source of Truth)
  This section defines what the program believes is happening right now.
@@ -60,10 +60,15 @@
  logic fighting itself If the system ever feels “confused,” the bug will live here.
 
 
-# (AI)
+
  
 ### Button history
  Used to detect transitions (pressed/released) instead of
  continuous button holds
 
+
+# the main loop 
+## this loop needs to only live in the main.py
+
+it is not entirely clear to me why at this point but i will update soon
 

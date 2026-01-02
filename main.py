@@ -1,12 +1,14 @@
-#
+# (Always at the top in python)
+# 1
 # Imports  /  Dependencies
 import time
 from machine import Pin, PWM
 from picographics import PicoGraphics, DISPLAY_PICO_EXPLORER
 from pimoroni import Button
 
-
+# 2
 # Hardware_Objects
+# idk if i am supposed to add anything gpio/related in this section
 display = PicoGraphics(display=DISPLAY_PICO_EXPLORER)
 WIDTH, HEIGHT = display.get_bounds()
 display.set_font("bitmap8")
